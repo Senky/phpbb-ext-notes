@@ -1,0 +1,22 @@
+{
+	"name": "senky/notes",
+	"type": "phpbb-extension",
+	"description": "This extension allow users to write their own notes.",
+	"version": "1.0.0",
+	"time": "2016-03-16",
+	"license": "GPL-2.0",
+	"authors": [{
+			"name": "Jakub Senko",
+			"email": "jakubsenko@gmail.com",
+			"role": "Lead Developer"
+		}],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "Notes",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0"
+		}
+	}
+}

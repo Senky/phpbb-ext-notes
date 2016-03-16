@@ -1,0 +1,18 @@
+services:
+    senky.notes.controller:
+        class: senky\notes\controller\main_controller
+        arguments:
+            - @dbal.conn
+            - @template
+            - @user
+            - @controller.helper
+            - @request
+            - %core.root_path%
+            - %core.php_ext%
+    senky.notes.listener:
+        class: senky\notes\event\listener
+        arguments:
+            - @template
+            - @controller.helper
+        tags:
+            - { name: event.listener }

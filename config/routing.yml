@@ -1,0 +1,3 @@
+senky_notes_notes:
+    path: /notes
+    defaults: { _controller: senky.notes.controller:handle_notes }
