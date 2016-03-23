@@ -2,6 +2,8 @@
 
 This is the repository for the development of the phpBB Notes Extension
 
+[![Build Status](https://travis-ci.org/Senky/phpbb-ext-notes.svg?branch=master)](https://travis-ci.org/Senky/phpbb-ext-notes)
+
 ## Install
 
 1. [Download the latest validated release](https://www.phpbb.com/customise/db/extension/notes/).
