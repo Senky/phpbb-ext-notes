@@ -22,5 +22,5 @@ $lang = array_merge($lang, array(
 	'NOTES'				=> 'Notes',
 	'NOTES_DESCRIPTION'	=> 'Notes you see here cannot be seen by anyone else, including administrators and moderators.',
 	'SAVE_NOTES'		=> 'Save notes',
-	'NOTES_SAVED'		=> "Your notes have been saved.<br /><br /> <a href=\"%s\">Back to notes</a>",
+	'NOTES_SAVED'		=> 'Your notes have been saved.<br /><br /> <a href="%s">Back to notes</a>',
 ));

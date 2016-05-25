@@ -10,6 +10,8 @@
 
 namespace senky\notes\controller;
 
+use phpbb\exception\http_exception;
+
 class main_controller
 {
 	/** @var \phpbb\db\driver\driver_interface */
@@ -81,7 +83,7 @@ class main_controller
 					WHERE user_id = ' . $this->user->data['user_id'];
 			$this->db->sql_query($sql);
 
-			trigger_error(sprintf($this->user->lang['NOTES_SAVED'], $this->helper->route('senky_notes_notes')));
+			throw new http_exception(200, 'NOTES_SAVED', array($this->helper->route('senky_notes_notes')));
 		}
 
 		$this->template->assign_vars(array(
