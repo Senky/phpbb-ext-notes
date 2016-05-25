@@ -2,7 +2,7 @@
 	"name": "senky/notes",
 	"type": "phpbb-extension",
 	"description": "This extension allow users to write their own notes.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"time": "2016-03-16",
 	"license": "GPL-2.0",
 	"authors": [{
