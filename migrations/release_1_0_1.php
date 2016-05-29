@@ -22,7 +22,7 @@ class release_1_0_1 extends \phpbb\db\migration\migration
 		return array(
 			'change_columns'	=> array(
 				$this->table_prefix . 'users'	=> array(
-					'user_note'	=> array('MTEXT_UNI', NULL),
+					'user_note'	=> array('MTEXT_UNI', null),
 				),
 			),
 		);
