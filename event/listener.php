@@ -78,7 +78,7 @@ class listener implements EventSubscriberInterface
 	public function assign_common_template_variables($event)
 	{
 		$this->template->assign_vars(array(
-			'U_NOTES'	=> $this->helper->route('senky_notes_notes'),
+			'U_SENKY_NOTES'	=> $this->helper->route('senky_notes_notes'),
 		));
 	}
 }
