@@ -72,18 +72,18 @@ class main_controller
 			redirect(append_sid("{$this->root_path}index.{$this->php_ext}"));
 		}
 
-		add_form_key('notes');
-		if (isset($_POST['note']) && check_form_key('notes'))
+		if ($this->request->is_set_post('note') && check_form_key('notes'))
 		{
 			$note = $this->request->variable('note', '', true);
 			$sql = 'UPDATE ' . USERS_TABLE . '
 					SET user_note = "' . $this->db->sql_escape($note) . '"
-					WHERE user_id = ' . $this->user->data['user_id'];
+					WHERE user_id = ' . (int) $this->user->data['user_id'];
 			$this->db->sql_query($sql);
 
 			return $this->helper->message('NOTES_SAVED', array($this->helper->route('senky_notes_notes')));
 		}
 
+		add_form_key('notes');
 		$this->template->assign_vars(array(
 			'NOTE'	=> $this->user->data['user_note'],
 		));
